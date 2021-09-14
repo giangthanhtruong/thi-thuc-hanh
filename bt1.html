@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let a = parseInt(prompt("nhập vào giá trị của a: "))
+        let b = parseInt(prompt("nhập vào giá trị của b: "))
+        let x;
+        function equation() {
+            if(a === 0) {
+                if(b === 0) {
+                    alert('Phương trình có vô số nghiệm')
+                } else {
+                    alert('Phuong trình vô nghiệm')
+                }
+            } else {
+                x = -b/a
+                alert('Phương trình có nghiệm là: ' + x)
+            }
+        }
+        equation();
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let  value = parseInt(prompt("Nhập vào giá trị cần tìm  "));
+    let numbers = [-3,-1,4,6,9,12,17];
+    let x;
+    function index(){
+        for (let i=0 ; i < numbers.length ; i++) {
+            if (value === numbers[i]) {
+                x = numbers.indexOf(value)
+                alert("vị trí của giá trị là: " + x)
+                }
+            if (value !== numbers[i]) {
+                alert("không có phần tử này trong mảng")
+                }
+            }
+            if (value > numbers.length ){
+                alert("không có vị trí nào")
+            }
+    }
+    index()
+</script>
+</body>
+</html>
